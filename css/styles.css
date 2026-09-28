@@ -227,6 +227,11 @@
      color: #ffffff;
 }
 
+/* .modal-header{
+     background-color: #712cf9;
+     color: #ffffff;
+} */
+
 #xbox{
      font-size: 70px;
      color: #16c802;
@@ -293,6 +298,11 @@
 
 .columna{
   min-height: 250px;
+  padding: 10px;
+}
+
+.columna-inicio{
+  min-height: 100px;
   padding: 10px;
 }
 

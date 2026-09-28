@@ -78,6 +78,19 @@
             <div class="row text-center">
                 <h2>Modal</h2>        
             </div>
+        </div>
+        <!-- Botón documentación -->
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-3 text-center">
+                    <a class="btn btn-outline-violeta" href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank" rel="noopener noreferrer">Documentación <i class="bi bi-filetype-doc"></i></a>
+                </div>                        
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row text-center">
+                <h2>Modal en botón</h2>        
+            </div>
         </div> 
         <br><!--Separador-->                
         <!-- Boton activa modal -->
@@ -105,9 +118,48 @@
                 </div>
             </div>
         </div>
+        <div class="container mt-5">
+            <div class="row text-center">
+                <h2>Modal en botón de tarjeta</h2>        
+            </div>
+        </div>
+        <!-- Tarjetas -->
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="img/card/card1.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</h5>
+                            <p class="card-text">Aprende Desarrollo Web con este curso 100% práctico, paso a paso y sin conocimientos previo.</p>
+                        </div>
+                        <div class="card-footer text-center fondo-violeta">                            
+                            <button type="button" class="btn btn-violeta" data-bs-toggle="modal" data-bs-target="#Modal-Basico1">Ver + </button>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <!-- Modal Tarjeta-->
+        <div class="modal fade" id="Modal-Basico1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header fondo-violeta">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Tarjeta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Cuerpo Modal (Puede albergar cualquier tipo de contenido como párrafos, imagenes, formularios entre otros objetos de bootstrap)
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-violeta" data-bs-dismiss="modal">Cerrar</button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
-        <div class="mt-auto">
-            <footer class="py-3 footer-fixed fondo-grafito">
+        <div class="mt-5">
+            <footer class="py-3 fondo-grafito">
                 <ul class="nav justify-content-center pb-3 mb-3">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Inicio</a>
