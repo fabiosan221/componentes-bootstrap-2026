@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DW1 - Navegacion</title>
+        <title>DW1 - Grid</title>
         <!-- Icono Pestaña -->
         <link rel="icon" type="image/png" href="img/bootstrap-icon.png">
         <!-- Estilos Bootstrap -->
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
     <body>
-        <!-- Barra sitio  -->
+        <!-- Barra sitio -->               
         <nav class="navbar navbar-expand-lg fondo-grafito">
             <div class="container-fluid">
                 <a class="navbar-brand fuente-blanco" href="index.html">Diseño Web I</a>
@@ -33,7 +33,7 @@
                             <a class="nav-link link fuente-verde-claro" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link fuente-violeta-active" aria-current="page" href="navegacion.html">Navegación</a>
+                            <a class="nav-link link fuente-verde-claro" aria-current="page" href="navegacion.html">Navegación</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link fuente-verde-claro" href="textoeimagen.html">Texto e Imagen</a>
@@ -60,11 +60,11 @@
                             <a class="nav-link link fuente-verde-claro" href="footer.html" aria-disabled="true">Footer</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fuente-verde-claro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Responsive</a>
+                            <a class="nav-link dropdown-toggle link-active fuente-violeta-active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Responsive</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                                <li><a class="dropdown-item" href="grid.html">Grid</a></li>                   
                                 <li><a class="dropdown-item" href="flexpadre.html">Flexbox Padre</a></li>
-                                <li><a class="dropdown-item" href="flexhijo.html">Flexbox Hijo</a></li>                     
+                                <li><a class="dropdown-item" href="flexhijo.html">Flexbox Hijo</a></li>
                             </ul>
                         </li>
                     </ul>                                
@@ -75,115 +75,17 @@
                 </div>
             </div>
         </nav>
-        <!-- Titulo -->
-        <div class="container mt-5">
-            <div class="row text-center">
-                <h2>Barra de navegación</h2>        
-            </div>
-        </div>
-        <!-- Botón documentación -->
-        <div class="container mt-3">
-            <div class="row justify-content-center">
-                <div class="col-3 text-center">
-                    <a class="btn btn-outline-violeta" href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank" rel="noopener noreferrer">Documentación <i class="bi bi-filetype-doc"></i></a>
-                </div>                        
-            </div>
-        </div> 
-        <br><!--Separador-->
-        <!-- Barra 1 -->
-        <nav class="navbar navbar-expand-lg color-nav">
-            <div class="container">
-                <div class="col">
-                    <a class="navbar-brand" href="#" id="mi-empresa">Mi empresa</a>
-                </div>                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Barra1" aria-controls="Barra1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>                
-                <div class="collapse navbar-collapse" id="Barra1">
-                    <div class="col">                
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active color-font-nav" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-font-nav" href="#">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-font-nav" aria-disabled="true">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-font-nav" aria-disabled="true">Contacto</a>
-                            </li>
-                        </ul>                                
-                    </div>                                        
-                </div>
-            </div>
-        </nav>
-        <br>
-        <!-- Barra 2 -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img id="logo" src="img/logo/logo.png" alt="">                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Barra2" aria-controls="Barra2" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="Barra2">                
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Contacto</a>
-                        </li>
-                    </ul>                                
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
-                        <button class="btn btn-outline-violeta" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <br>
-        <!-- Barra 3 -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
-            <a class="navbar-brand" href="index.html"><img id="logo-nav" src="img/logo/logo-nav.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active item-navegacion" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active item-navegacion" aria-current="page" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active item-navegacion" aria-current="page" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active item-navegacion" aria-current="page" href="#">Procesos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active item-navegacion" aria-current="page" href="#">Contacto</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+        <!-- Grilla -->
+        
         <!-- Footer -->
-        <div class="container mt-auto">
-            <footer class="py-3 mt-5 footer-fixed fondo-grafito">
-                <ul class="nav justify-content-center  pb-3 mb-3">
+        <div class="mt-auto">
+            <footer class="py-3 mt-5 fondo-grafito">
+                <ul class="nav justify-content-center pb-3 mb-3">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="navegacion.html" class="nav-link px-2 text-body-secondary link fuente-violeta-active">Navegación</a>
+                        <a href="navegacion.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Navegación</a>
                     </li>
                     <li class="nav-item">
                         <a href="textoeimagen.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Texto e Imagen</a>
@@ -196,7 +98,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="icono.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Iconos</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item">
                         <a href="cards.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Tarjetas</a>
                     </li>
@@ -205,22 +107,22 @@
                     </li>
                     <li class="nav-item">
                         <a href="modal.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Modal</a>
-                    </li>
+                    </li>                    
                     <li class="nav-item">
                         <a href="footer.html" class="nav-link px-2 text-body-secondary link fuente-verde-claro">Footer</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link px-2 text-body-secondary link fuente-verde-claro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Responsive</a>
+                        <a class="dropdown-toggle nav-link px-2 text-body-secondary link fuente-violeta-active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Responsive</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="grid.html">Grid</a></li>
                             <li><a class="dropdown-item" href="flexpadre.html">Flexbox Padre</a></li>
-                            <li><a class="dropdown-item" href="flexhijo.html">Flexbox Hijo</a></li>                  
+                            <li><a class="dropdown-item" href="flexhijo.html">Flexbox Hijo</a></li>                     
                         </ul>
                     </li>
                 </ul>
                 <p class="text-center text-body-secondary text-bg-light">&copy; Diseño Web I - 2026</p>
             </footer>
-        </div>        
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
