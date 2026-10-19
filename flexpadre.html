@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DW1 - Grid</title>
+        <title>DW1 - Flexbox Padre</title>
         <!-- Icono Pestaña -->
         <link rel="icon" type="image/png" href="img/bootstrap-icon.png">
         <!-- Estilos Bootstrap -->
@@ -83,7 +83,15 @@
                     <h2>Flexbox Elemento Padre</h2>        
                 </div>
             </div>
-            <div class="container mt-2">
+            <!-- Botón documentación -->
+            <div class="container mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-3 text-center">
+                        <a class="btn btn-outline-violeta" href="https://getbootstrap.com/docs/5.3/utilities/flex/" target="_blank" rel="noopener noreferrer">Documentación <i class="bi bi-filetype-doc"></i></a>
+                    </div>                        
+                </div>
+            </div>
+            <div class="container mt-4">
                 <div class="row text-center">
                     <p class="alert alert-primary">
                         A continuacion se muestran las clases que ofrece el framework Bootstrap equivalentes a las propiedades CSS para la aplicación del método 
@@ -95,7 +103,7 @@
         <!-- Uso d-flex -->
         <div class="container mt-5">
             <div class="row text-center">
-                <h2>Propiedad "d-flex"</h2>
+                <h3>Propiedad "d-flex"</h3>
                 <p class="alert alert-info">
                     En la estructura inicial, las cajas aparecen apiladas una debajo de la otra. La razón, es porque la etiqueta que las contiene 
                     tiene la propiedad <strong>display</strong> con el valor <strong>block</strong> por defecto.
@@ -127,7 +135,7 @@
         <div class="fondo-verde-claro mt-5">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="mt-3">Propiedad "flex-direction"</h2>     
+                    <h3 class="mt-3">Propiedad "flex-direction"</h3>     
                     <p class="alert alert-info">
                         Permite modificar la dirección de las cajas flexibles que por defecto es horizontal. 
                         Existen <strong>4 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>flex-row, flex-row-reverse, flex-column, 
@@ -148,7 +156,7 @@
         <!-- Uso flex-wrap -->        
         <div class="container mt-5">
             <div class="row text-center">
-                <h2>Propiedad "flex-wrap"</h2>     
+                <h3>Propiedad "flex-wrap"</h3>     
                 <p class="alert alert-info">
                     Esta propiedad permite indicar si se quiere envolver o no todos los elementos en una fila. 
                     Existen <strong>3 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>flex-nowrap, flex-wrap, flex-wrap-reverse</strong>.
@@ -172,8 +180,8 @@
         <div class="fondo-verde-claro mt-5">
             <div class="container mt-5">
                 <div class="row text-center">
-                    <h2 class="mt-3">Propiedad "justify-content"</h2>
-                    <h3 class="mt-3">Modo horizontal</h3>     
+                    <h3 class="mt-3">Propiedad "justify-content"</h3>
+                    <h4 class="mt-3">Modo horizontal</h4>     
                     <p class="alert alert-info">
                         Esta propiedad permite centrar los elementos flexibles en el <strong>main-axis (eje principal)</strong> que por defecto se encuentra 
                         en modo horizontal. Tambien se puede implementar en modo vertical agregando, ademas, la clase <strong>flex-column</strong>
@@ -195,7 +203,7 @@
         <div class="fondo-verde-claro">
             <div class="container">
                 <div class="row text-center">
-                    <h3 class="mt-3">Modo vertical</h3>                         
+                    <h4 class="mt-3">Modo vertical</h4>                         
                 </div>
             </div>        
             <div class="container">
@@ -210,7 +218,7 @@
         <!-- Uso align-items -->        
         <div class="container mt-5">
             <div class="row text-center">
-                <h2>Propiedad "align-items"</h2>     
+                <h3>Propiedad "align-items"</h3>     
                 <p class="alert alert-info">
                     Esta propiedad permite alinear los elementos en el <strong>cross axis (eje transversal)</strong> que por defecto es vertical, 
                     pero tambien se puede modificar para utilizar en horizontal agregando la clase <strong>flex-column</strong>. 
@@ -234,7 +242,7 @@
         <div class="fondo-verde-claro">
             <div class="container mt-5">
                 <div class="row text-center">
-                    <h2>Propiedad "align-content"</h2>     
+                    <h3>Propiedad "align-content"</h3>     
                     <p class="alert alert-info">
                         Esta propiedad permite alinear los elementos en el <strong>cross axis (eje transversal)</strong> en grupo. Esta es la diferencia con 
                         la propiedad "align-items", que alinea los elementos linea por linea.
