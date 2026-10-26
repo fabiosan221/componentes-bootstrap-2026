@@ -117,11 +117,18 @@
                 <div class="flex-item p-2 text-white bg-success">3</div>
                 <div class="flex-item p-2 text-white bg-danger">4</div>
             </div>
+            <p>El contenedor padre identificado con la clase "flex-content" tiene la propiedad CSS "width: 500px;"</p>  
             <br><!-- Separador -->
             <div class="row text-center">
                 <p class="alert alert-info">                    
                     Al aplicar la propiedad <strong>"d-flex"</strong> al elemento contenedor padre, los elementos hijos se transforman en cajas flexibles. 
                     Cuando se utiliza flexbox en un elemento, este no se vuelve flexible, sino los elementos que estan contenidos en este.
+                </p> 
+                <p class="alert alert-info">                    
+                    La clase <strong>"d-flex"</strong> posee los tamaños receptivos para utilizarla con diferentes anchos de pantalla. 
+                    Por ejemplo, <strong>"d-sm-flex"</strong> aplica la propiedad <strong>"display: flex"</strong> a partir de pantallas pequeñas, 
+                    <strong>"d-md-flex"</strong> a partir de pantallas medianas, <strong>"d-lg-flex"</strong> a partir de pantallas grandes y 
+                    <strong>"d-xl-flex"</strong> a partir de pantallas extra grandes.
                 </p>        
             </div>
             <div class="d-flex flex-content bg-dark text-center">
@@ -130,6 +137,7 @@
                 <div class="flex-item p-2 text-white bg-success">3</div>
                 <div class="flex-item p-2 text-white bg-danger">4</div>            
             </div>
+            <p>El contenedor padre identificado con la clase "flex-content" tiene la propiedad CSS "width: 500px;"</p>
         </div>
         <!-- Uso flex-direction -->
         <div class="fondo-verde-claro mt-5">
@@ -141,11 +149,15 @@
                         Existen <strong>4 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>flex-row, flex-row-reverse, flex-column, 
                         flex-column-reverse</strong>.
                         El valor por defecto es <strong>flex-row</strong>.
-                    </p>   
+                    </p>
+                    <p class="alert alert-info">
+                        Tambien permite tamaños receptivos de pantalla con la siguiente sintaxis: flex-pantalla-row. Ejemplo: <strong>flex-sm-row</strong>. 
+                        Lo mismo aplica para los otros valores segun tamaño de pantalla y propiedades.
+                    </p>    
                 </div>
             </div>        
             <div class="container">
-                <div class="d-flex flex-content bg-dark text-center">
+                <div class="d-flex flex-row flex-content bg-dark text-center">
                     <div class="flex-item p-2 bg-info">1</div>
                     <div class="flex-item p-2 bg-warning">2</div>
                     <div class="flex-item p-2 text-white bg-success">3</div>
@@ -161,11 +173,15 @@
                     Esta propiedad permite indicar si se quiere envolver o no todos los elementos en una fila. 
                     Existen <strong>3 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>flex-nowrap, flex-wrap, flex-wrap-reverse</strong>.
                     El valor por defecto es <strong>flex-nowrap</strong>.
+                </p>
+                <p class="alert alert-info">
+                    Tambien permite tamaños receptivos de pantalla con la siguiente sintaxis: flex-pantalla-nowrap. Ejemplo: <strong>flex-sm-nowrap</strong>. 
+                    Lo mismo aplica para los otros valores segun tamaño de pantalla y propiedades.
                 </p>   
             </div>
         </div>        
         <div class="container">
-            <div class="d-flex bg-dark text-center flex-content-h">
+            <div class="d-flex flex-nowrap bg-dark text-center flex-content-h">
                 <div class="flex-item p-2 bg-info">1</div>
                 <div class="flex-item p-2 bg-warning">2</div>
                 <div class="flex-item p-2 text-white bg-success">3</div>
@@ -176,7 +192,7 @@
                 <div class="flex-item p-2 text-white bg-success">7</div> -->
             </div>            
         </div>        
-        <!-- Uso justify-content vertical-->        
+        <!-- Uso justify-content horizontal-->        
         <div class="fondo-verde-claro mt-5">
             <div class="container mt-5">
                 <div class="row text-center">
@@ -187,7 +203,11 @@
                         en modo horizontal. Tambien se puede implementar en modo vertical agregando, ademas, la clase <strong>flex-column</strong>
                         Existen <strong>5 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>justify-content-start, justify-content-end, 
                         justify-content-center, justify-content-between, justify-content-around</strong>. El valor por defecto es <strong>justify-content-start</strong>.
-                    </p>   
+                    </p>
+                    <p class="alert alert-info">
+                        Tambien permite tamaños receptivos de pantalla con la siguiente sintaxis: justify-content-pantalla-start. Ejemplo: <strong>justify-content-sm-start</strong>. 
+                        Lo mismo aplica para los otros valores segun tamaño de pantalla y propiedades.
+                    </p>    
                 </div>
             </div>        
             <div class="container">
@@ -199,7 +219,7 @@
                 </div>            
             </div>
         </div>
-        <!-- Uso justify-content horizontal-->        
+        <!-- Uso justify-content vertical-->        
         <div class="fondo-verde-claro">
             <div class="container">
                 <div class="row text-center">
@@ -225,7 +245,11 @@
                     Existen <strong>5 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>align-items-start, align-items-end, 
                     align-items-center, align-items-baseline, align-items-stretch</strong>. 
                     El valor por defecto es <strong>align-items-stretch</strong>.
-                </p>   
+                </p>
+                <p class="alert alert-info">
+                    Tambien permite tamaños receptivos de pantalla con la siguiente sintaxis: align-items-pantalla-start. Ejemplo: <strong>align-items-sm-start</strong>. 
+                    Lo mismo aplica para los otros valores segun tamaño de pantalla y propiedades.
+                </p>    
             </div>
         </div>        
         <div class="container">
@@ -249,6 +273,10 @@
                         Existen <strong>6 valores</strong> para esta propiedad que ofrece Bootstrap en clases: <strong>align-content-start, align-content-end, 
                         align-content-center, align-content-between, align-content-around, align-content-stretch</strong>. 
                         El valor por defecto es <strong>align-items-stretch</strong>.
+                    </p>
+                    <p class="alert alert-info">
+                        Tambien permite tamaños receptivos de pantalla con la siguiente sintaxis: align-content-pantalla-start. Ejemplo: <strong>align-content-sm-start</strong>. 
+                        Lo mismo aplica para los otros valores segun tamaño de pantalla y propiedades.
                     </p>   
                 </div>
             </div>        
